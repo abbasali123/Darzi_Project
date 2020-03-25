@@ -16,6 +16,7 @@ body {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+  padding-right: 100px;
 }
 
 .topnav a:hover {
@@ -56,4 +57,25 @@ body {
     display: block;
     text-align: left;
   }
+}
+
+#darzi {
+  background-color: #4caf50;
+  color: white;
+  padding: 50px 100px 50px 100px;
+  font-size: 20px;
+  margin: 50px;
+}
+
+#design {
+  background-color: #4caf50;
+  color: white;
+  padding: 50px 100px 50px 100px;
+  font-size: 20px;
+  margin: 50px;
+}
+
+.read_more {
+  background-color: #4caf50;
+  color: white;
 }
