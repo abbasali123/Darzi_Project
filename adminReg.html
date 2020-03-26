@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!------ Include the above in your HEAD tag ---------->
+  </head>
+  <body>
+    <div class="container">
+      <table class="table table-striped">
+        <tbody>
+          <tr>
+            <td colspan="1">
+              <form class="well form-horizontal">
+                <fieldset>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">First Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-user"></i></span
+                        ><input
+                          id="firstName"
+                          name="firstName"
+                          placeholder="First Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Middle Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-user"></i></span
+                        ><input
+                          id="midleName"
+                          name="middleName"
+                          placeholder="Middle Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Last Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-user"></i></span
+                        ><input
+                          id="lastName"
+                          name="lastName"
+                          placeholder="Last Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div id="div_id_gender" class="form-group required">
+                    <label
+                      for="id_gender"
+                      class="control-label col-md-4  requiredField"
+                    >
+                      Gender
+                    </label>
+
+                    <div class="controls col-md-8 " style="margin-bottom: 10px">
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="id_gender_1"
+                          value="M"
+                          style="margin-bottom: 10px"
+                        />Male</label
+                      >
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="id_gender_2"
+                          value="F"
+                          style="margin-bottom: 10px"
+                        />Female
+                      </label>
+                      <label class="radio-inline">
+                        <input
+                          type="radio"
+                          name="gender"
+                          id="id_gender_3"
+                          value="O"
+                          style="margin-bottom: 10px"
+                        />Other
+                      </label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Phone Number</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-earphone"></i></span
+                        ><input
+                          id="phoneNumber"
+                          name="phoneNumber"
+                          placeholder="Phone Number"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Whatsapp Number</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-whatsapp"></i></span
+                        ><input
+                          id="whatNumber"
+                          name="whatNumber"
+                          placeholder="Whatsapp Number"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Email</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-envelope"></i></span
+                        ><input
+                          id="email"
+                          name="email"
+                          placeholder="Email"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Alternate Email</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-envelope"></i></span
+                        ><input
+                          id="alteremail"
+                          name="alteremail"
+                          placeholder="Alternate Email"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Address</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="address"
+                          name="address"
+                          placeholder="Address"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Nearest Land Mark</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="land"
+                          name="land"
+                          placeholder="Nearest Land Mark"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">City</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="city"
+                          name="city"
+                          placeholder="City"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >State/Province/Region</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="state"
+                          name="state"
+                          placeholder="State/Province/Region"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Country</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon" style="max-width: 100%;"
+                          ><i class="glyphicon glyphicon-list"></i
+                        ></span>
+                        <select class="selectpicker form-control">
+                          <option
+                            >A really long option to push the menu over the
+                            edget</option
+                          >
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Postal Code/ZIP</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="postcode"
+                          name="postcode"
+                          placeholder="Postal Code/ZIP"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Birth Date</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i
+                            class="fa fa-birthday-cake"
+                            aria-hidden="true"
+                          ></i></span
+                        ><input
+                          id="Bdate"
+                          name="Bdate"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="date"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">CNIC</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i
+                            class="fa fa-id-card"
+                            aria-hidden="true"
+                          ></i></span
+                        ><input
+                          id="cnic"
+                          name="cnic"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                          data-inputmask="'mask': '99999-9999999-9'"
+                          placeholder="XXXXX-XXXXXXX-X"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Qualification</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i
+                            class="fa fa-graduation-cap"
+                            aria-hidden="true"
+                          ></i></span
+                        ><input
+                          id="qual"
+                          name="qual"
+                          placeholder="Qualification"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Religion</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"></span
+                        ><input
+                          id="rel"
+                          name="rel"
+                          placeholder="Religion"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Bank Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-bank" aria-hidden="true"></i></span
+                        ><input
+                          id="bname"
+                          name="bname"
+                          placeholder="Bank Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Branch Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-bank" aria-hidden="true"></i></span
+                        ><input
+                          id="brname"
+                          name="brname"
+                          placeholder="Branch Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Branch City</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="glyphicon glyphicon-home"></i></span
+                        ><input
+                          id="cname"
+                          name="cname"
+                          placeholder="City Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Account Name</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user-circle-o"></i></span
+                        ><input
+                          id="aname"
+                          name="aname"
+                          placeholder="Account Name"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Account Type</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user-circle-o"></i></span
+                        ><input
+                          id="atype"
+                          name="atype"
+                          placeholder="Account Type"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Account No</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user-circle-o"></i></span
+                        ><input
+                          id="ano"
+                          name="ano"
+                          placeholder="Account Number"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">IBAN</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user-circle-o"></i></span
+                        ><input
+                          id="iban"
+                          name="iban"
+                          placeholder="IBAN"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">User ID</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-user-circle-o"></i></span
+                        ><input
+                          id="uid"
+                          name="uid"
+                          placeholder="User ID"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label">Password</label>
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-lock"></i></span
+                        ><input
+                          id="password"
+                          name="password"
+                          placeholder="Password"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Confirm Password</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-check-circle"></i></span
+                        ><input
+                          id="cpassword"
+                          name="cpassword"
+                          placeholder="Confirm Password"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="text"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Applicant's Profile Photo</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-image    "></i></span
+                        ><input
+                          id="aphoto"
+                          name="aphoto"
+                          placeholder=""
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="file"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label class="col-md-4 control-label"
+                      >Applicant's Documents</label
+                    >
+                    <div class="col-md-8 inputGroupContainer">
+                      <div class="input-group">
+                        <span class="input-group-addon"
+                          ><i class="fa fa-file    "></i></span
+                        ><input
+                          id="adoc"
+                          name="adoc"
+                          placeholder="Confirm Password"
+                          class="form-control"
+                          required="true"
+                          value=""
+                          type="file"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </form>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
