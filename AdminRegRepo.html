@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Bootstrap Example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="./AdminRegStyles.css">
+      </head>
+  <body>
+    <div class="container" style="margin-top: 30px;">
+        <div class="profile-head">
+            <!--col-md-4 col-sm-4 col-xs-12 close-->
+            <div class="col-md- col-sm-4 col-xs-12">
+                <img src="http://www.newlifefamilychiropractic.net/wp-content/uploads/2014/07/300x300.gif" class="img-responsive"/>
+                <h6>Abbas Ali</h6>
+                <div class="container"style="margin-left: 90px;">
+                    <span class="btn btn-default uplod-file">
+                            Upload Photo <input type="file" />
+                    </span>
+                </div>
+            </div>
+            <!--col-md-4 col-sm-4 col-xs-12 close-->
+    
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <h5>Abbas Ali</h5>
+                <p>Admin</p>
+                <ul>
+                    <li><span class="glyphicon glyphicon-briefcase"></span> 9 years</li>
+                    <li><span class="glyphicon glyphicon-map-marker"></span> Pakistan</li>
+                    <li><span class="glyphicon glyphicon-home"></span> address </li>
+                    <li><span class="glyphicon glyphicon-phone"></span> <a href="#" title="call">(+91) 9840550049</a></li>
+                    <li><span class="glyphicon glyphicon-envelope"></span><a href="#" title="mail">user@mail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--profile-head close-->
+    </div>
+    <!--container close-->
+    
+    
+    <br/>
+    <br/>
+    
+    <div class="container">
+        <div class="col-sm-7">
+            <div data-spy="scroll" class="tabbable-panel">
+                <div class="tabbable-line">
+                    <ul class="nav nav-tabs ">
+                        <li class="active">
+                            <a href="#tab_default_1" data-toggle="tab">Personal Info </a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_2" data-toggle="tab">Education</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_4" data-toggle="tab">Contact Details</a>
+                        </li>
+                        <li>
+                            <a href="#tab_default_5" data-toggle="tab">Address Details</a>
+                        </li>
+
+                        <li>
+                            <a href="#tab_default_3" data-toggle="tab">Bank Details</a>
+                        </li>
+                      
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="tab_default_1">
+                            <div class="well well-sm">
+                                <h4>PERSONAL DATA</h4>
+                            </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                        <table class="table bio-table">
+                            <tbody>
+                                <tr>      
+                                    <td>Firstname</td>
+                                    <td>: Abbas</td> 
+                                </tr>
+                                <tr>      
+                                    <td>Middle Name</td>
+                                    <td>: </td> 
+                                </tr>
+                                <tr>    
+                                    <td>Last Name</td>
+                                    <td>: Ali</td>
+                                </tr>
+                                <tr>    
+                                    <td>Date of Birthday</td>
+                                    <td>: 12 May 1999</td>       
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>: Male</td>
+                                </tr> 
+                                <tr>
+                                    <td>Religion</td>
+                                    <td>: Islam</td>
+                                </tr> 
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab_default_2">
+                        <div class="well well-sm">
+                            <h4>EDUCATIONAL BACKGROUND</h4>
+                        </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                        <table class="table bio-table">
+                            <tbody>
+                                <tr>
+                                    <td>Elementary School</td>
+                                    <td>: </td>
+                                    <td>Year Graduated</td>
+                                    <td>: </td> 
+                                </tr>
+                                <tr>
+                                    <td>High School</td>
+                                    <td>: </td>
+                                    <td>Year Graduated</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Under Graduate</td>
+                                    <td>: </td>
+                                    <td>Year Graduated</td>
+                                    <td>: </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab_default_3">
+                        <div class="well well-sm">
+                            <h4>Bank Details</h4>
+                        </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                        <table class="table bio-table">
+                            <tbody>
+                                <tr>
+                                    <td>Bank Name</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Branch Name</td>
+                                    <td>: </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>Branch City</td>
+                                    <td>: </td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>Account Name</td>
+                                    <td>: </td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>Account Type</td>
+                                    <td>: </td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>Account No</td>
+                                    <td>: </td>
+                                  
+                                </tr>
+                                <tr>
+                                    <td>IBAN</td>
+                                    <td>: </td>
+                                  
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab_default_4">
+                        <div class="well well-sm">
+                            <h4>OFFICIAL AND PERSONAL CONTACTS</h4>
+                        </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                        <table class="table bio-table">
+                            <tbody>
+                                <tr>
+                                    <td>Office Telephone Number</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Official Whatsapp Phone</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Official Email Address</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Personal Mobile Phone</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>Personal Email Address </td>
+                                    <td>: </td>
+                                </tr>
+                                                          </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-pane" id="tab_default_5">
+                        <div class="well well-sm">
+                            <h4>ADDRESS DETAILS</h4>
+                        </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                        <table class="table bio-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Present Residential Address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>   Line 1</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Line 2</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   City</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   State</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Country</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Pin code</td>
+                                    <td>: </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                        <br/>
+    
+                        <table class="table bio-table">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Permanent Residential Address</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>   Plot No / Door No / Part No / Block No</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Street Name</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   City</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   State</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Country</td>
+                                    <td>: </td>
+                                </tr>
+                                <tr>
+                                    <td>   Pin code</td>
+                                    <td>: </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                    
+                    <div class="tab-pane" id="tab_default_6">
+                        <div class="well well-sm">
+                            <h4>ADDRESS DETAILS</h4>
+                        </div>
+                        <p align="right">
+                            <button type="button" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-edit"></span> Edit</button>
+                        </p>
+                       
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="col-sm-4">
+        <div class="panel panel-default">
+            <div class="menu_title">
+                <b>Employee Info</b>
+                <p>RSI Content Solutions Pakistan Pvt. Ltd</p>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="form-group">
+                            <label for="email">Name:</label>
+                            <p>Abbas Ali </p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Emp ID:</label>
+                            <p>1020</p>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Data of Joining:</label>
+                            <p>09-05-2016</p>
+                        </div>
+                      
+                        <div class="form-group">
+                            <label for="email">In Case of emergency please contact:</label>
+                            <p>9500028421</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
